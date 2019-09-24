@@ -1,4 +1,11 @@
 package ru.geekbrains.JCoreProfLvl.lesson1;
 
-public class Apple {
+public class Apple extends Fruit {
+    public Apple(){
+        super(1.0);
+    }
+
+    public Apple(double weight) {
+        super(weight);
+    }
 }
