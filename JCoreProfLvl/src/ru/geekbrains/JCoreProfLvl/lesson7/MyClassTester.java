@@ -30,7 +30,7 @@ public class MyClassTester {
         Comparator<Method> comparator = new Comparator<Method>() {
             @Override
             public int compare(Method o1, Method o2) {
-                return o1.getAnnotation(Test.class).priority() - o2.getAnnotation(Test.class).priority();
+                return o2.getAnnotation(Test.class).priority() - o1.getAnnotation(Test.class).priority();
             }
         };
         testMethodsList.sort(comparator);
